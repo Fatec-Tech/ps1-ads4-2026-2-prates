@@ -20,8 +20,9 @@ function renderizarTabela() {
 
 		linha.innerHTML = `
       <td>${paciente.nome}</td>
-      <td>${paciente.email}</td>
+	  <td>${paciente.telefone}</td>
       <td>${formatarData(paciente.nascimento)}</td>
+	  <td>${paciente.email}</td>
     `;
 
 		tabela.appendChild(linha);
@@ -41,6 +42,7 @@ formulario.addEventListener('submit', (event) => {
 	const nome = document.getElementById('nome').value;
 	const email = document.getElementById('email').value;
 	const nascimento = document.getElementById('nascimento').value;
+	const telefone = document.getElementById('telefone').value;
 
 	adicionarPaciente(nome, email, nascimento);
 	renderizarTabela();
