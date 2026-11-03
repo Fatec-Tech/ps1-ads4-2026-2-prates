@@ -1,5 +1,5 @@
 // Em produção (Render). Para testar localmente, troque por 'http://localhost:3000/pacientes'
-const URL_API = 'http://localhost:3000/pacientes';
+const URL_API = 'https://api-clinica-jhony.onrender.com/pacientes';
 
 const formulario = document.getElementById('form-paciente');
 const tabela = document.getElementById('tabela-pacientes');
